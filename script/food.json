@@ -1,0 +1,248 @@
+{
+  "foods":[
+    {
+    "Category": "BUTTER", 
+    "upcCode": "058000001657",
+    "Data": {
+      "Niacin": 0.042, 
+      "Major Minerals": {
+        "Copper": 0.0, 
+        "Iron": 0.02, 
+        "Sodium": 576, 
+        "Potassium": 24, 
+        "Calcium": 24, 
+        "Magnesium": 2, 
+        "Zinc": 0.09, 
+        "Phosphorus": 24
+      }, 
+      "Vitamins": {
+        "Vitamin A - IU": 2499, 
+        "Vitamin C": 0.0, 
+        "Vitamin B12": 0.17, 
+        "Vitamin B6": 0.003, 
+        "Vitamin A - RAE": 684, 
+        "Vitamin E": 2.32, 
+        "Vitamin K": 7.0
+      }, 
+      "Carboydrate": 0.06, 
+      "Selenium": 1.0, 
+      "Thiamin": 0.005, 
+      "Choline": 19, 
+      "Beta Carotene": 158, 
+      "Fiber": 0.0, 
+      "Refuse Percentage": 0, 
+      "Fat": {
+        "SaturatedFat": 51.368, 
+        "MonosaturatedFat": 21.021, 
+        "TotalLipid": 81.11, 
+        "PolysaturatedFat": 3.043
+      }, 
+      "Water": 15.87, 
+      "Lycopene": 0, 
+      "Pantothenic Acid": 0.11, 
+      "Ash": 2.11, 
+      "Alpha Carotene": 0, 
+      "Retinol": 671, 
+      "Manganese": 0.0, 
+      "Beta Cryptoxanthin": 0, 
+      "Riboflavin": 0.034, 
+      "Cholesterol": 215, 
+      "Lutein and Zeaxanthin": 0, 
+      "Kilocalories": 717, 
+      "Household Weights": {
+        "1st Household Weight Description": "1 cup", 
+        "1st Household Weight": 227.0, 
+        "2nd Household Weight": 14, 
+        "2nd Household Weight Description": "1 tbsp"
+      }, 
+      "Sugar Total": 0.059999999, 
+      "Protein": 0.85
+    }, 
+    "Description": "BUTTER,WITH SALT", 
+    "Nutrient Data Bank Number": 1001
+    },
+    {
+      "Category": "BUTTER OIL", 
+      "upcCode": "058000309715",
+      "Data": {
+        "Niacin": 0.003, 
+        "Major Minerals": {
+          "Copper": 0.001, 
+          "Iron": 0.0, 
+          "Sodium": 2, 
+          "Potassium": 5, 
+          "Calcium": 4, 
+          "Magnesium": 0, 
+          "Zinc": 0.01, 
+          "Phosphorus": 3
+        }, 
+        "Vitamins": {
+          "Vitamin A - IU": 3069, 
+          "Vitamin C": 0.0, 
+          "Vitamin B12": 0.01, 
+          "Vitamin B6": 0.001, 
+          "Vitamin A - RAE": 840, 
+          "Vitamin E": 2.8, 
+          "Vitamin K": 8.6
+        }, 
+        "Carboydrate": 0.0, 
+        "Selenium": 0.0, 
+        "Thiamin": 0.001, 
+        "Choline": 22, 
+        "Beta Carotene": 193, 
+        "Fiber": 0.0, 
+        "Refuse Percentage": 0, 
+        "Fat": {
+          "SaturatedFat": 61.924, 
+          "MonosaturatedFat": 28.732, 
+          "TotalLipid": 99.48, 
+          "PolysaturatedFat": 3.694
+        }, 
+        "Water": 0.24, 
+        "Lycopene": 0, 
+        "Pantothenic Acid": 0.01, 
+        "Ash": 0.0, 
+        "Alpha Carotene": 0, 
+        "Retinol": 824, 
+        "Manganese": 0.0, 
+        "Beta Cryptoxanthin": 0, 
+        "Riboflavin": 0.005, 
+        "Cholesterol": 256, 
+        "Lutein and Zeaxanthin": 0, 
+        "Kilocalories": 876, 
+        "Household Weights": {
+          "1st Household Weight Description": "1 cup", 
+          "1st Household Weight": 205.0, 
+          "2nd Household Weight": 13, 
+          "2nd Household Weight Description": "1 tbsp"
+        }, 
+        "Sugar Total": 0.0, 
+        "Protein": 0.28
+      }, 
+      "Description": "BUTTER OIL,ANHYDROUS", 
+      "Nutrient Data Bank Number": 1003
+    }, 
+    {
+      "Category": "CHEESE", 
+      "upcCode": "069000061008",
+      "Data": {
+        "Niacin": 1.016, 
+        "Major Minerals": {
+          "Copper": 0.04, 
+          "Iron": 0.31, 
+          "Sodium": 1395, 
+          "Potassium": 256, 
+          "Calcium": 528, 
+          "Magnesium": 23, 
+          "Zinc": 2.66, 
+          "Phosphorus": 387
+        }, 
+        "Vitamins": {
+          "Vitamin A - IU": 763, 
+          "Vitamin C": 0.0, 
+          "Vitamin B12": 1.22, 
+          "Vitamin B6": 0.166, 
+          "Vitamin A - RAE": 198, 
+          "Vitamin E": 0.25, 
+          "Vitamin K": 2.4
+        }, 
+        "Carboydrate": 2.34, 
+        "Selenium": 14.5, 
+        "Thiamin": 0.029, 
+        "Choline": 15, 
+        "Beta Carotene": 74, 
+        "Fiber": 0.0, 
+        "Refuse Percentage": 0, 
+        "Fat": {
+          "SaturatedFat": 18.669, 
+          "MonosaturatedFat": 7.778, 
+          "TotalLipid": 28.74, 
+          "PolysaturatedFat": 0.8
+        }, 
+        "Water": 42.41, 
+        "Lycopene": 0, 
+        "Pantothenic Acid": 1.729, 
+        "Ash": 5.11, 
+        "Alpha Carotene": 0, 
+        "Retinol": 192, 
+        "Manganese": 0.009, 
+        "Beta Cryptoxanthin": 0, 
+        "Riboflavin": 0.382, 
+        "Cholesterol": 75, 
+        "Lutein and Zeaxanthin": 0, 
+        "Kilocalories": 353, 
+        "Household Weights": {
+          "1st Household Weight Description": "1 oz", 
+          "1st Household Weight": 28.35, 
+          "2nd Household Weight": 17, 
+          "2nd Household Weight Description": "1 cubic inch"
+        }, 
+        "Sugar Total": 0.5, 
+        "Protein": 21.4
+      },
+      "Description": "CHEESE,BLUE", 
+      "Nutrient Data Bank Number": 1004
+    },
+    {
+      "Category": "EGG ROLLS", 
+      "upcCode":"067489118589",
+      "Data": {
+        "Niacin": 2.25, 
+        "Major Minerals": {
+          "Copper": 0.092, 
+          "Iron": 1.55, 
+          "Sodium": 525, 
+          "Potassium": 212, 
+          "Calcium": 34, 
+          "Magnesium": 20, 
+          "Zinc": 0.9, 
+          "Phosphorus": 91
+        }, 
+        "Vitamins": {
+          "Vitamin A - IU": 0, 
+          "Vitamin C": 0.0, 
+          "Vitamin B12": 0.15, 
+          "Vitamin B6": 0.173, 
+          "Vitamin A - RAE": 0, 
+          "Vitamin E": 0.27, 
+          "Vitamin K": 22.6
+        }, 
+        "Carboydrate": 29.5, 
+        "Selenium": 22.8, 
+        "Thiamin": 0.24, 
+        "Choline": 0, 
+        "Beta Carotene": 0, 
+        "Fiber": 2.099999905, 
+        "Refuse Percentage": 0, 
+        "Fat": {
+          "SaturatedFat": 1.588, 
+          "MonosaturatedFat": 2.35, 
+          "TotalLipid": 7.17, 
+          "PolysaturatedFat": 2.464
+        }, 
+        "Water": 51.33, 
+        "Lycopene": 0, 
+        "Pantothenic Acid": 0.49, 
+        "Ash": 2.06, 
+        "Alpha Carotene": 0, 
+        "Retinol": 0, 
+        "Manganese": 0.332, 
+        "Beta Cryptoxanthin": 0, 
+        "Riboflavin": 0.11, 
+        "Cholesterol": 14, 
+        "Lutein and Zeaxanthin": 0, 
+        "Kilocalories": 222, 
+        "Household Weights": {
+          "1st Household Weight Description": "1 roll", 
+          "1st Household Weight": 85.47, 
+          "2nd Household Weight": 28, 
+          "2nd Household Weight Description": "1 oz"
+        }, 
+        "Sugar Total": 5.320000172, 
+        "Protein": 9.94
+      }, 
+      "Description": "EGG ROLLS,PORK,REFR,HTD", 
+      "Nutrient Data Bank Number": 22953
+    }
+  ]
+}

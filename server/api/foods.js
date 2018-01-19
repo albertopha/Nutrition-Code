@@ -1,8 +1,10 @@
-const request = require('request')
-const router = require('express').Router()
+const request = require('request');
+const router = require('express').Router();
+const allFoods = require('../../script/food.json');
 
 module.exports = router
 
+//GET /api/foods/https://api.edamam.com/search?  (External Source)
 router.get('/', (req, res, next) => {
     request({
         uri: 'https://api.edamam.com/search?',
@@ -22,4 +24,9 @@ router.get('/', (req, res, next) => {
             res.json(error)
         }
     })
-})
+});
+
+//GET /api/foods/upcfood (Local file)
+router.get('/upcfood', (req, res, next) => {
+    res.send(allFoods);
+});

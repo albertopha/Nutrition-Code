@@ -9,14 +9,13 @@ export class Barcode extends React.Component {
     }
 
     componentDidMount() {
-        console.log('3=======')
         Quagga.init({
             inputStream: {
                 type : "LiveStream",
                 constraints: {
                     width: 640,
                     height: 480,
-                    facing: "environment" // or user
+                    facingMode: "environment" // or user
                 }
             },
             locator: {
@@ -39,7 +38,6 @@ export class Barcode extends React.Component {
     }
 
     componentWillMount() {
-        console.log('2========')
         Quagga.offDetected(this._onDetected);
     }
 
@@ -50,7 +48,6 @@ export class Barcode extends React.Component {
     }
 
     _onDetected(result) {
-        console.log('1========', result)
         this.props.onDetected(result);
         Quagga.offDetected(this._onDetected);
     }

@@ -14,9 +14,9 @@ export class BubbleChart extends React.Component{
         this.testingd3 = this.testingd3.bind(this)
     }
 
-    componentWillMount() {
-        this.props.fetchAllFoods();
-    }
+    // componentWillMount() {
+    //     this.props.fetchAllFoods();
+    // }
 
     componentDidMount() {
         this.testingd3();
@@ -30,15 +30,28 @@ export class BubbleChart extends React.Component{
     }
 
     render() {
-        let colors = ['#FD9827', '#DA3B21', '#3669C9', '#1D9524', '#971497'];
+        let colors = ['#FD9827', '#DA3B21', '#3669C9', '#1D9524'];
+        const { singleFood } = this.props;
+        console.log('singleFood =========', singleFood);
+        let data = [];
+        singleFood? data = [
+            {name: "Saturated Fat", count: singleFood.SaturatedFat},
+            {name: "Monosaturated Fat", count: singleFood.MonosaturatedFat},
+            {name: "Total Lipid", count: singleFood.TotalLipid},
+            {name: "Polysaturated Fat", count: singleFood.PolysaturatedFat}
+        ]: data = []
+
         const { width, height, foods, title } = this.props;
         console.log('where are all my foods', foods);
         return (
             <div>
                 <h1>{title}</h1>
-                <Chart width={width} height={height}>
-                    <DataSeries data={data} colors={colors} width={width} height={height}/>
-                </Chart>
+                {
+                    singleFood?  <Chart width={width} height={height}>
+                        <DataSeries data={data} colors={colors} width={width} height={height}/>
+                    </Chart>: <h1>CHART IS EMPTY</h1>
+                }
+               
             </div>
         )
     }
@@ -56,26 +69,10 @@ BubbleChart.propTypes = {
 BubbleChart.defaultProps = {
     width: 300,
     height: 350,
-    title: 'BUBBLE CHART',
+    title: 'FAT CHART',
     Legend: true
 };
 
-/**
- * CONTAINER
- */
-const mapState = (state, ownProps) => {
-    return {
-        foods: state.foods
-    }
-};
-
-const mapDispatch = (dispatch) => {
-    return {
-        fetchAllFoods() {
-            dispatch(fetchFoods())
-        }
-    }
-};
 
 
 /*********** Chart ************/
@@ -197,14 +194,15 @@ class Sector extends React.Component {
 
 }
 
-let data = [
-    {name: "Apples", count: 10},
-    {name: "Oranges", count: 20},
-    {name: "Bananas", count: 5},
-    {name: "Blueberries", count: 42},
-    {name: "mangoes ", count: 29}  
-];
+// let data = [
+//     {name: "Apples", count: 10},
+//     {name: "Oranges", count: 40},
+//     {name: "Bananas", count: 5},
+//     {name: "Blueberries", count: 100},
+//     {name: "mangoes ", count: 29},
+//     {name: "WTF", count: 100}
+// ];
 
 
-export default connect(mapState, mapDispatch)(BubbleChart);
+export default BubbleChart;
 

@@ -1,12 +1,14 @@
 import React from 'react';
 import { Barcode, Result } from './Barcode';
+import BarcodeSingleFood from './BarcodeSingleFood';
 
 export class BarcodeFood extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             scanning: false,
-            upcCode: {}
+            upcCode: {},
+            render: 0
         }
         this._scan = this._scan.bind(this);
         this.onDetect = this.onDetect.bind(this);
@@ -15,7 +17,7 @@ export class BarcodeFood extends React.Component {
 
     render() {
         console.log(this.state.scanning, "=========", this.state.upcCode)
-        const { scanning, upcCode,  } = this.state;
+        const { scanning, upcCode, render  } = this.state;
         return (
             <div>
                 <button onClick={this._scan}>{scanning ? 'Stop' : 'Start'}</button>
@@ -23,6 +25,10 @@ export class BarcodeFood extends React.Component {
                 <ul className="upcCode">
                     {upcCode.codeResult&&<li>{upcCode.codeResult.code}</li>}
                 </ul>
+                {
+                    render?<BarcodeSingleFood upcCode={this.state.upcCode.codeResult.code} />:null
+
+                }
                 {scanning ? <Barcode onDetected={this.onDetect} /> : null}
             </div>
         );
@@ -30,19 +36,16 @@ export class BarcodeFood extends React.Component {
 
     handleSubmit(event) {
         event.preventDefault();
-        console.log('submitted??', event.target.result);
         console.log('submitted======', this.state.upcCode);
-        this.setState({scanning: false});
+        this.setState({scanning: false, render: 1});
     }
 
     _scan() {
-        this.setState({scanning: !this.state.scanning});
+        this.setState({scanning: !this.state.scanning, render: 0, upcCode: {}});
     }
 
     onDetect(upcCode) {
-        console.log('infinite loop? =======')
         if(this.state.scanning){
-            console.log('????????')
             this.setState({scanning: false, upcCode});
         }
     }

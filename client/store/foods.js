@@ -4,12 +4,12 @@ import history from '../history'
 /**
  * ACTION TYPES
  */
-const GET_FOODS = 'GET_FOODS'
+const GET_FOODS = 'GET_FOODS';
 
 /**
  * INITIAL STATE
  */
-const defaultFoods = {}
+const defaultFoods = []
 
 /**
  * ACTION CREATORS
@@ -35,8 +35,8 @@ export const fetchFoods = () =>
 export default function (state = defaultFoods, action) {
   switch (action.type) {
     case GET_FOODS:
-      return action.foods
+      return action.foods;
     default:
-      return state
+      return state;
   }
 }
