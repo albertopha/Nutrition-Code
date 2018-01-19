@@ -29,6 +29,8 @@ const Navbar = (props) => {
               <Link to="/login">Login</Link>
               <Link to="/signup">Sign Up</Link>
               <Link to="/bubble-chart">Calories</Link>
+              <Link to="/daily-progress">Daily Progress</Link>
+              <Link to="/scan">Scan Product</Link>
             </div>
         }
       </nav>

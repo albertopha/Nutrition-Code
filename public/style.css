@@ -64,3 +64,14 @@ form div {
     flex-direction: column;
     align-items: center;
   }
+
+  /* ----------------- pie chart -------------------*/
+  .arc {
+    opacity: 1.0;
+  }
+  .arc-hover {
+    opacity: 0.5;
+  }
+
+  /* ----------------- daily chart -------------------*/
+  
