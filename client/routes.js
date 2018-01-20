@@ -8,6 +8,7 @@ import {me} from './store'
 import DailyProgress  from './components/DailyProgress';
 import { BarcodeFood } from './components/BarcodeFood';
 import BottomNav from './components/BottomNav';
+import RealBubbleDumb from './components/bubble/BubbleChartDumb';
 
 /**
  * COMPONENT
@@ -35,7 +36,7 @@ class Routes extends Component {
                   </Switch>
               */}
               {/* Displays our Login component as a fallback */}
-              <Route path="/bubble-chart" component={BubbleChart} />
+              <Route path="/bubble-chart" component={RealBubbleDumb} />
               <Route path="/daily-progress" component={DailyProgress} />
               <Route exact path='/' component={Frontpage} />
               <Route exact path='/scan' component={BarcodeFood} />
