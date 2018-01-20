@@ -1,7 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import { fetchUPCFood } from '../store/barcodeFood';
-import BubbleChart from './BubbleChart';
+import SingleChart from './SingleChart';
 
 export class BarcodeSingleFood extends React.Component {
     constructor(props) {
@@ -29,7 +29,7 @@ export class BarcodeSingleFood extends React.Component {
                 </h2>
                 <div>
                 {
-                    singleFood.Data? <BubbleChart singleFood={singleFood.Data.Fat} />:null
+                    singleFood.Data? <SingleChart singleFood={singleFood.Data.Fat} />:null
                 }
                 </div>
             </div>

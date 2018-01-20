@@ -4,7 +4,7 @@ let d3 = require('d3');
 var _ = require('lodash');
 
 
-class BubbleChartReact extends React.Component {
+class BubbleCreate extends React.Component {
 
     constructor(props) {
         super(props);
@@ -31,13 +31,13 @@ class BubbleChartReact extends React.Component {
             this.minValue =
                 0.95 *
                 d3.min(this.props.data, item => {
-                    return item.v;
+                    return item.calories;
                 });
 
             this.maxValue =
                 1.05 *
                 d3.max(this.props.data, item => {
-                    return item.v;
+                    return item.calories;
                 });
 
             this.simulatePositions(this.props.data);
@@ -67,7 +67,7 @@ class BubbleChartReact extends React.Component {
             .force(
                 "collide",
                 d3.forceCollide(d => {
-                    return this.radiusScale(d.v) + 2;
+                    return this.radiusScale(d.calories) + 2;
                 })
             )
             .on("tick", () => {
@@ -81,20 +81,20 @@ class BubbleChartReact extends React.Component {
         const minValue =
             0.95 *
             d3.min(data, item => {
-                return item.v;
+                return item.calories;
             });
 
         const maxValue =
             1.05 *
             d3.max(data, item => {
-                return item.v;
+                return item.calories;
             });
 
         const color = d3
             .scaleLinear()
             .domain([minValue, maxValue])
             .interpolate(d3.interpolateHcl)
-            .range(["#eb001b", "#f79e1b"]);
+            .range(["#F8BBD0", "#AD1457"]);
 
         // render simple circle element
         if (!this.props.useLabels) {
@@ -102,11 +102,11 @@ class BubbleChartReact extends React.Component {
                 return (
                     <circle
                         key={index}
-                        r={this.radiusScale(item.v)}
+                        r={this.radiusScale(item.calories)}
                         cx={item.x}
                         cy={item.y}
-                        fill={color(item.v)}
-                        stroke={d3.rgb(color(item.v)).brighter(2)}
+                        fill={color(item.calories)}
+                        stroke={d3.rgb(color(item.calories)).brighter(2)}
                         strokeWidth="2"
                     />
                 );
@@ -125,7 +125,7 @@ class BubbleChartReact extends React.Component {
         // render circle and text elements inside a group
         const texts = _.map(data, (item, index) => {
             const props = this.props;
-            const fontSize = this.radiusScale(item.v) / 2;
+            const fontSize = this.radiusScale(item.calories) / 2;
             return (
                 <g
                     key={index}
@@ -133,9 +133,9 @@ class BubbleChartReact extends React.Component {
                         item.x}, ${props.height / 2 + item.y})`}
                 >
                     <circle
-                        r={this.radiusScale(item.v)}
-                        fill={color(item.v)}
-                        stroke={d3.rgb(color(item.v)).brighter(2)}
+                        r={this.radiusScale(item.calories)}
+                        fill={color(item.calories)}
+                        stroke={d3.rgb(color(item.calories)).brighter(2)}
                         strokeWidth="2"
                     />
                     <text
@@ -145,7 +145,7 @@ class BubbleChartReact extends React.Component {
                         fontSize={`${fontSize}px`}
                         fontWeight="bold"
                     >
-                        {item.v}
+                        {item.calories}
                     </text>
                 </g>
             );
@@ -168,14 +168,14 @@ class BubbleChartReact extends React.Component {
 }
 
 
-BubbleChartReact.propTypes = {
+BubbleCreate.propTypes = {
     data: PropTypes.array,
     width: PropTypes.number,
     height: PropTypes.number,
     useLabels: PropTypes.bool
 };
 
-BubbleChartReact.defaultProps = {
+BubbleCreate.defaultProps = {
     data: [],
     useLabels: false,
     width: 800,
@@ -183,4 +183,4 @@ BubbleChartReact.defaultProps = {
 };
 
 
-export default BubbleChartReact;
+export default BubbleCreate;

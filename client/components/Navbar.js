@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import {withRouter, Link} from 'react-router-dom';
 import {logout} from '../store';
-import BubbleChart from './BubbleChart';
+import SingleChart from './SingleChart';
 import AppBar from 'material-ui/AppBar';
 import Toolbar from 'material-ui/Toolbar';
 import MenuItem from 'material-ui/MenuItem';

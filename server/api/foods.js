@@ -1,6 +1,7 @@
 const request = require('request');
 const router = require('express').Router();
 const allFoods = require('../../script/food.json');
+const allCalories = require('../../script/calories.json');
 
 module.exports = router
 
@@ -30,3 +31,8 @@ router.get('/', (req, res, next) => {
 router.get('/upcfood', (req, res, next) => {
     res.send(allFoods);
 });
+
+//GET /api/foods/calories (Local file)
+router.get('/calories', (req, res, next) => {
+    res.send(allCalories.foods);
+})

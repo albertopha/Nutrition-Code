@@ -5,6 +5,6 @@
  */
 export {default as Navbar} from './Navbar'
 export {default as Frontpage} from './Frontpage'
-export {default as BubbleChart} from './BubbleChart'
+export {default as SingleChart} from './SingleChart'
 export {default as UserHome} from './user-home'
 export {Login, Signup} from './auth-form'

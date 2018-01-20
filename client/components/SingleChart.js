@@ -6,7 +6,7 @@ import { fetchFoods } from '../store/foods'
 import BottomNav from './BottomNav';
 let d3 = require('d3')
 
-export class BubbleChart extends React.Component{
+export class SingleChart extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
@@ -60,14 +60,14 @@ export class BubbleChart extends React.Component{
 }
 
 
-BubbleChart.propTypes = {
+SingleChart.propTypes = {
     width: PropTypes.number,
     height: PropTypes.number,
     title: PropTypes.string,
     data: PropTypes.array.isRequired
 };
 
-BubbleChart.defaultProps = {
+SingleChart.defaultProps = {
     width: 300,
     height: 350,
     title: 'FAT CHART',
@@ -195,15 +195,5 @@ class Sector extends React.Component {
 
 }
 
-// let data = [
-//     {name: "Apples", count: 10},
-//     {name: "Oranges", count: 40},
-//     {name: "Bananas", count: 5},
-//     {name: "Blueberries", count: 100},
-//     {name: "mangoes ", count: 29},
-//     {name: "WTF", count: 100}
-// ];
-
-
-export default BubbleChart;
+export default SingleChart;
 

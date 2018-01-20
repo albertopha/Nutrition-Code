@@ -3,12 +3,12 @@ import {connect} from 'react-redux'
 import {Route, Switch, Router} from 'react-router-dom'
 import PropTypes from 'prop-types'
 import history from './history'
-import {Navbar, Login, Signup, UserHome, BubbleChart, Frontpage } from './components'
+import {Navbar, Login, Signup, UserHome, SingleChart, Frontpage } from './components'
 import {me} from './store'
 import DailyProgress  from './components/DailyProgress';
 import { BarcodeFood } from './components/BarcodeFood';
 import BottomNav from './components/BottomNav';
-import RealBubbleDumb from './components/bubble/BubbleChartDumb';
+import BubbleChart from './components/bubble/BubbleChart';
 
 /**
  * COMPONENT
@@ -36,7 +36,7 @@ class Routes extends Component {
                   </Switch>
               */}
               {/* Displays our Login component as a fallback */}
-              <Route path="/bubble-chart" component={RealBubbleDumb} />
+              <Route path="/bubble-chart" component={BubbleChart} />
               <Route path="/daily-progress" component={DailyProgress} />
               <Route exact path='/' component={Frontpage} />
               <Route exact path='/scan' component={BarcodeFood} />

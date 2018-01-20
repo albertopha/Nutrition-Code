@@ -1,0 +1,125 @@
+{
+    "foods":[
+      {
+        "name": "BUTTER,WITH SALT", 
+        "calories": 717
+      },
+      {
+        "name": "BUTTER OIL,ANHYDROUS", 
+        "calories": 876
+      }, 
+      {
+        "name": "CHEESE,BLUE",
+        "calories": 353
+      },
+      {
+        "name": "EGG ROLLS,PORK,REFR,HTD", 
+        "calories": 222
+      },
+      {
+        "name": "CHICKEN TERRIYAKI",
+        "calories": 225
+      },
+      {
+        "name": "CEREALS RTE",
+        "calories": 398
+      },
+      {
+        "name": "BAGEL",
+        "calories": 140
+      },
+      {
+        "name": "BISCUIT",
+        "calories": 86
+      },
+      {
+        "name": "BREAD WHITE",
+        "calories": 96
+      },
+      {
+        "name": "PASTA",
+        "calories": 315
+      },
+      {
+        "name": "POTATOES",
+        "calories": 420
+      },
+      {
+        "name": "RICE WHITE",
+        "calories": 420
+      },
+      {
+        "name": "RICE CAKES",
+        "calories": 500
+      },
+      {
+        "name": "ANCHOVIES TINNED",
+        "calories": 300
+      },
+      {
+        "name": "BACON AVERAGE FRIED",
+        "calories": 250
+      },
+      {
+        "name": "BACON AVERAGE GRILLED",
+        "calories": 150
+      },
+      {
+        "name": "BEEF ROAST",
+        "calories": 300
+      },
+      {
+        "name": "BEEF BURGERS FROZEN",
+        "calories": 320
+      },
+      {
+        "name": "COD FRESH",
+        "calories": 150
+      },
+      {
+        "name": "CRAB",
+        "calories": 200
+      },
+      {
+        "name": "DUCK ROAST",
+        "calories": 400
+      },
+      {
+        "name": "FISH CAKE (PER CAKE)",
+        "calories": 90
+      },
+      {
+        "name": "FISH FINGERS",
+        "calories": 50
+      },
+      {
+        "name": "GAMMON",
+        "calories": 320
+      },
+      {
+        "name": "HAM",
+        "calories": 6
+      },
+      {
+        "name": "KIDNEY",
+        "calories": 200
+      },
+      {
+        "name": "KIPPER",
+        "calories": 200
+      },
+      {
+        "name": "LIVER",
+        "calories": 200
+      },
+      {
+        "name": "LAMB",
+        "calories": 300
+      },
+      {
+        "name": "LOBSTER BOILED",
+        "calories": 200
+      }
+    ]
+  }
+  

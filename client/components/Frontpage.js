@@ -19,7 +19,7 @@ export const Frontpage = (props) => {
       <div>
         <Paper style={style} zDepth={5} circle={true} />
       </div>
-      <h1>WELCOME TO RT6</h1>
+      <h1>TO EAT OR NOT TO EAT THAT IS THE QUESTION</h1>
     </div>
   )
 }
