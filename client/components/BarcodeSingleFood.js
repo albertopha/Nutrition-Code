@@ -27,9 +27,11 @@ export class BarcodeSingleFood extends React.Component {
                         singleFood.Description
                     }
                 </h2>
+                <div>
                 {
                     singleFood.Data? <BubbleChart singleFood={singleFood.Data.Fat} />:null
                 }
+                </div>
             </div>
         );
     }

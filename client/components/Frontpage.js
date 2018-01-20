@@ -1,11 +1,12 @@
 import React from 'react'
+import Navbar from './Navbar'
 
 export const Frontpage = (props) => {
 
   return (
-    <div className="frontPageContainer flex-container-column">
+    <div className="frontPageContainer">
+      <Navbar />
       <h1>WELCOME TO RT6</h1>
-      <h2>DIET ON POINT</h2>
     </div>
   )
 }
