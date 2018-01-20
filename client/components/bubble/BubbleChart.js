@@ -26,11 +26,13 @@ class BubbleChart extends Component {
         });
         if(allCalories[0] !== undefined) {
             return (
-                <BubbleCreate data={rawdata} />
+                <div className='bubble-chart-background'>
+                    <BubbleCreate data={rawdata} />
+                </div>
             )
         }
         return (
-            <div>
+            <div className='bubble-chart-background'>
                 Please Wait..
             </div>
         )

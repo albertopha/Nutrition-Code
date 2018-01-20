@@ -78,16 +78,15 @@ form div {
   /* ----------------- barcode-food -------------------*/
   .barcode-food-p {
     height: 700px;
-    background-image: 'https://www.barcoding.com/wp-content/uploads/2016/09/Picture-111.png';
+    background: url('https://wallpapertag.com/wallpaper/full/e/4/4/399378-gorgerous-black-background-image-2200x1650-for-android-40.jpg');
     display: flex;
   }
   .barcode-food {
     width: 60%;
-    background-color: rgba(228, 194, 199, 0.753);
+
   }
 
   .barcode-food-2 {
-    background-color: rgba(187, 29, 68, 0.849);
     width: 40%;
   }
   /* ----------------- daily chart -------------------*/
@@ -100,3 +99,7 @@ form div {
   }
 
 /* ----------------- Bubble Chart -------------------*/
+.bubble-chart-background {
+  height: 700px;
+  background: url('./background.png');
+}
