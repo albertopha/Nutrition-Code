@@ -28,7 +28,7 @@ form div {
 /* -----------------FRONT PAGE Section -------------------*/
 .frontPageContainer{
   background-image:  url('http://cfile205.uf.daum.net/image/0309B35050BD441401F5EB');
-  height: 200vh;
+  height: 100vh;
   background-size: 100% 100%;
   justify-content: center;
   align-items: flex-start;
@@ -75,6 +75,26 @@ form div {
   .arc-hover {
     opacity: 0.5;
   }
+  /* ----------------- barcode-food -------------------*/
+  .barcode-food-p {
+    height: 700px;
+    background-image: 'https://www.barcoding.com/wp-content/uploads/2016/09/Picture-111.png';
+    display: flex;
+  }
+  .barcode-food {
+    width: 60%;
+    background-color: rgba(228, 194, 199, 0.753);
+  }
 
+  .barcode-food-2 {
+    background-color: rgba(187, 29, 68, 0.849);
+    width: 40%;
+  }
   /* ----------------- daily chart -------------------*/
   
+  /* ----------------- Bottom Nav -------------------*/
+  .bottom-nav Paper{
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+  }

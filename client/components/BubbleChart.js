@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
 import {withRouter, Link} from 'react-router-dom'
 import { fetchFoods } from '../store/foods'
+import BottomNav from './BottomNav';
 let d3 = require('d3')
 
 export class BubbleChart extends React.Component{
@@ -51,7 +52,7 @@ export class BubbleChart extends React.Component{
                         <DataSeries data={data} colors={colors} width={width} height={height}/>
                     </Chart>: <h1>CHART IS EMPTY</h1>
                 }
-               
+                <BottomNav />
             </div>
         )
     }

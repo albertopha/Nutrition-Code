@@ -13,6 +13,7 @@ import IconButton from 'material-ui/IconButton';
 
 
 
+
 /**
  * COMPONENT
  *  The Main component is our 'picture frame' - it displays the navbar and anything
@@ -26,20 +27,19 @@ const Navbar = (props) => {
     <div className="navbar">
       <AppBar
         style={{ backgroundColor: '#000000' }}
-        title="WELCOME TO RTZF"
         iconClassNameRight="muidocs-icon-navigation-expand-more"
         iconElementLeft={
           <IconMenu
             iconButtonElement={
-              <IconButton><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" color='#E91E63'>
+              <IconButton><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill='#E91E63'>
                 <path d="M12 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm9 7h-6v13h-2v-6h-2v6H9V9H3V7h18v2z"/></svg>
               </IconButton>}>
-          <MenuItem><Link to="/">Home</Link></MenuItem>
-          <MenuItem><Link to="/login">Login</Link></MenuItem>
-          <MenuItem><Link to="/signup">Sign Up</Link></MenuItem>
-          <MenuItem><Link to="/bubble-chart">Calories</Link></MenuItem>
-          <MenuItem><Link to="/daily-progress">Daily Progress</Link></MenuItem>
-          <MenuItem><Link to="/scan">Scan Product</Link></MenuItem>
+          <MenuItem style={{ backgroundColor: '#000000' }}><Link to="/" style={{color: '#E30B5C'}}>Home</Link></MenuItem>
+          <MenuItem style={{ backgroundColor: '#000000' }}><Link to="/login" style={{color: '#E30B5C'}}>Login</Link></MenuItem>
+          <MenuItem style={{ backgroundColor: '#000000' }}><Link to="/signup" style={{color: '#E30B5C'}}>Sign Up</Link></MenuItem>
+          <MenuItem style={{ backgroundColor: '#000000' }}><Link to="/bubble-chart" style={{color: '#E30B5C'}}>Calories</Link></MenuItem>
+          <MenuItem style={{ backgroundColor: '#000000' }}><Link to="/daily-progress" style={{color: '#E30B5C'}}>Daily Progress</Link></MenuItem>
+          <MenuItem style={{ backgroundColor: '#000000' }}><Link to="/scan" style={{color: '#E30B5C'}}>Scan Product</Link></MenuItem>
           </IconMenu>
         }/>
       {children}
