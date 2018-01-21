@@ -3,9 +3,10 @@
     {
     "Category": "BUTTER", 
     "upcCode": "058000001657",
+    "imageUrl": "https://bloximages.chicago2.vip.townnews.com/host.madison.com/content/tncms/assets/v3/editorial/f/63/f6324afa-4853-5fd3-9036-35d230aeb64f/58f9230b1075f.image.jpg",
     "Data": {
       "Niacin": 0.042, 
-      "Major Minerals": {
+      "minerals": {
         "Copper": 0.0, 
         "Iron": 0.02, 
         "Sodium": 576, 
@@ -48,7 +49,7 @@
       "Riboflavin": 0.034, 
       "Cholesterol": 215, 
       "Lutein and Zeaxanthin": 0, 
-      "Kilocalories": 717, 
+      "calories": 717, 
       "Household Weights": {
         "1st Household Weight Description": "1 cup", 
         "1st Household Weight": 227.0, 
@@ -64,9 +65,10 @@
     {
       "Category": "BUTTER OIL", 
       "upcCode": "058000309715",
+      "imageUrl": "http://www.paleo-britain.co.uk/wp-content/uploads/2014/03/High-vitamin-butter-oil.jpg",
       "Data": {
         "Niacin": 0.003, 
-        "Major Minerals": {
+        "minerals": {
           "Copper": 0.001, 
           "Iron": 0.0, 
           "Sodium": 2, 
@@ -109,7 +111,7 @@
         "Riboflavin": 0.005, 
         "Cholesterol": 256, 
         "Lutein and Zeaxanthin": 0, 
-        "Kilocalories": 876, 
+        "calories": 876, 
         "Household Weights": {
           "1st Household Weight Description": "1 cup", 
           "1st Household Weight": 205.0, 
@@ -125,9 +127,10 @@
     {
       "Category": "CHEESE", 
       "upcCode": "069000061008",
+      "imageUrl": "https://i0.wp.com/fullofplants.com/wp-content/uploads/2017/08/vegan-aged-blue-cheese.jpg?resize=1156%2C1734",
       "Data": {
         "Niacin": 1.016, 
-        "Major Minerals": {
+        "minerals": {
           "Copper": 0.04, 
           "Iron": 0.31, 
           "Sodium": 1395, 
@@ -170,7 +173,7 @@
         "Riboflavin": 0.382, 
         "Cholesterol": 75, 
         "Lutein and Zeaxanthin": 0, 
-        "Kilocalories": 353, 
+        "calories": 353, 
         "Household Weights": {
           "1st Household Weight Description": "1 oz", 
           "1st Household Weight": 28.35, 
@@ -186,9 +189,10 @@
     {
       "Category": "EGG ROLLS", 
       "upcCode":"067489118589",
+      "imageUrl":"https://steamykitchen.com/wp-content/uploads/2011/01/mothers-famous-chinese-egg-rolls-recipe-small-lg.jpg",
       "Data": {
         "Niacin": 2.25, 
-        "Major Minerals": {
+        "minerals": {
           "Copper": 0.092, 
           "Iron": 1.55, 
           "Sodium": 525, 
@@ -231,7 +235,7 @@
         "Riboflavin": 0.11, 
         "Cholesterol": 14, 
         "Lutein and Zeaxanthin": 0, 
-        "Kilocalories": 222, 
+        "calories": 222, 
         "Household Weights": {
           "1st Household Weight Description": "1 roll", 
           "1st Household Weight": 85.47, 
@@ -243,6 +247,68 @@
       }, 
       "Description": "EGG ROLLS,PORK,REFR,HTD", 
       "Nutrient Data Bank Number": 22953
-    }
+    },
+      {
+      "Category": "BUTTER", 
+      "upcCode": "052000001617",
+      "imageUrl": "https://bloximages.chicago2.vip.townnews.com/host.madison.com/content/tncms/assets/v3/editorial/f/63/f6324afa-4853-5fd3-9036-35d230aeb64f/58f9230b1075f.image.jpg",
+      "Data": {
+        "Niacin": 0.042, 
+        "minerals": {
+          "Copper": 0.0, 
+          "Iron": 0.02, 
+          "Sodium": 576, 
+          "Potassium": 24, 
+          "Calcium": 24, 
+          "Magnesium": 2, 
+          "Zinc": 0.09, 
+          "Phosphorus": 24
+        }, 
+        "Vitamins": {
+          "Vitamin A - IU": 2499, 
+          "Vitamin C": 0.0, 
+          "Vitamin B12": 0.17, 
+          "Vitamin B6": 0.003, 
+          "Vitamin A - RAE": 684, 
+          "Vitamin E": 2.32, 
+          "Vitamin K": 7.0
+        }, 
+        "Carboydrate": 0.06, 
+        "Selenium": 1.0, 
+        "Thiamin": 0.005, 
+        "Choline": 19, 
+        "Beta Carotene": 158, 
+        "Fiber": 0.0, 
+        "Refuse Percentage": 0, 
+        "Fat": {
+          "SaturatedFat": 51.368, 
+          "MonosaturatedFat": 21.021, 
+          "TotalLipid": 81.11, 
+          "PolysaturatedFat": 3.043
+        }, 
+        "Water": 15.87, 
+        "Lycopene": 0, 
+        "Pantothenic Acid": 0.11, 
+        "Ash": 2.11, 
+        "Alpha Carotene": 0, 
+        "Retinol": 671, 
+        "Manganese": 0.0, 
+        "Beta Cryptoxanthin": 0, 
+        "Riboflavin": 0.034, 
+        "Cholesterol": 215, 
+        "Lutein and Zeaxanthin": 0, 
+        "calories": 717, 
+        "Household Weights": {
+          "1st Household Weight Description": "1 cup", 
+          "1st Household Weight": 227.0, 
+          "2nd Household Weight": 14, 
+          "2nd Household Weight Description": "1 tbsp"
+        }, 
+        "Sugar Total": 0.059999999, 
+        "Protein": 0.85
+      }, 
+      "Description": "BUTTER,WITH SALT", 
+      "Nutrient Data Bank Number": 1001
+      }
   ]
 }

@@ -15,7 +15,7 @@ export const Frontpage = (props) => {
 
   return (
     <div className="frontPageContainer">
-      <Navbar />
+      
       <div>
         <Paper style={style} zDepth={5} circle={true} />
       </div>

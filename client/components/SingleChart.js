@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
 import {withRouter, Link} from 'react-router-dom'
 import { fetchFoods } from '../store/foods'
-import BottomNav from './BottomNav';
+// import BottomNav from './BottomNav';
 let d3 = require('d3')
 
 export class SingleChart extends React.Component{
@@ -12,26 +12,10 @@ export class SingleChart extends React.Component{
         this.state = {
 
         }
-        this.testingd3 = this.testingd3.bind(this)
-    }
-
-    // componentWillMount() {
-    //     this.props.fetchAllFoods();
-    // }
-
-    componentDidMount() {
-        this.testingd3();
-    }
-
-    testingd3() {
-        console.log("I reached here! =========")
-        d3.selectAll("h1").style("color", function() {
-          return "hsl(" + Math.random() * 360 + ",100%,50%)";
-        });
     }
 
     render() {
-        let colors = ['#FD9827', '#DA3B21', '#3669C9', '#1D9524'];
+        let colors = ['#F44336', '#E91E63', '#9C27B0', '#AD1457'];
         const { singleFood } = this.props;
         console.log('singleFood =========', singleFood);
         let data = [];
@@ -52,7 +36,6 @@ export class SingleChart extends React.Component{
                         <DataSeries data={data} colors={colors} width={width} height={height}/>
                     </Chart>: <h1>CHART IS EMPTY</h1>
                 }
-                <BottomNav />
             </div>
         )
     }
@@ -155,7 +138,6 @@ class Sector extends React.Component {
 
     render() {
         const { data, colors, width, ind } = this.props;
-        // console.log("I'm in  SECTOR ========", colors, ind);
 
         let outerRadius = width/2.2,
         innerRadius = width/8,
@@ -181,12 +163,10 @@ class Sector extends React.Component {
     }
 
     onMouseOut() {
-        console.log('onMouseOut======');
         this.setState({text: '', opacity:'arc'});
     }
 
     onMouseOver(event) {
-        console.log('onMouseOver=====',event, this.props.data.value)
         this.setState({text: '', opacity:'arc-hover'});
         var percent = (this.props.data.value/this.props.total)*100;
         percent = percent.toFixed(1);
