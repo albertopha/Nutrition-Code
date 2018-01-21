@@ -24,6 +24,14 @@ form div {
   fill: #c02446ad;
 }
 
+h1 {
+  color: white;
+}
+
+ul {
+  color: white;
+}
+
 
 /* -----------------FRONT PAGE Section -------------------*/
 .frontPageContainer{
@@ -77,17 +85,39 @@ form div {
   }
   /* ----------------- barcode-food -------------------*/
   .barcode-food-p {
-    height: 700px;
+    padding: 50px;
+    height: 1100px;
     background: url('https://wallpapertag.com/wallpaper/full/e/4/4/399378-gorgerous-black-background-image-2200x1650-for-android-40.jpg');
-    display: flex;
+    /* display: flex; */
+  }
+  .barcode-food-h1 {
+    background-color: black;
   }
   .barcode-food {
-    width: 60%;
-
+    /* width: 60%; */
+  
   }
 
   .barcode-food-2 {
-    width: 40%;
+    /* width: 40%; */
+  }
+
+  /* ----------------- barcode-single-food -------------------*/
+  .single-food {
+    display: flex;
+  }
+
+  .single-food-left {
+    width: 50%;
+  }
+
+  .single-food-right {
+    width: 50%;
+  }
+
+  .single-food-img {
+    width: 300px;
+    height: 350px;
   }
   /* ----------------- daily chart -------------------*/
   

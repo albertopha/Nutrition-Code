@@ -28,6 +28,7 @@ export class BarcodeFood extends React.Component {
         const { scanning, upcCode, render  } = this.state;
         return (
             <div className='barcode-food-p'>
+                <h1 className="barcode-food-h1">Scan your barcode</h1>
                 <div className='barcode-food'>
                     <RaisedButton icon={<svg fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M9 3L7.17 5H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2h-3.17L15 3H9zm3 15c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"/>
@@ -46,9 +47,6 @@ export class BarcodeFood extends React.Component {
 
                     }
                     {scanning ? <Barcode onDetected={this.onDetect} /> : null}
-                </div>
-                <div className='barcode-food-2'>
-                    <h1>Press Start</h1>
                 </div>
             </div>
         );
