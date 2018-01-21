@@ -51,7 +51,7 @@ class BubbleCreate extends React.Component {
     radiusScale = value => {
         const fx = d3
             .scaleSqrt()
-            .range([1, 50])
+            .range([1, 100])
             .domain([this.minValue, this.maxValue]);
 
         return fx(value);
@@ -97,6 +97,7 @@ class BubbleCreate extends React.Component {
             .range(["#F8BBD0", "#AD1457"]);
 
         // render simple circle element
+        console.log('useLables=====', this.props.useLabels);
         if (!this.props.useLabels) {
             const circles = _.map(data, (item, index) => {
                 return (
@@ -125,7 +126,7 @@ class BubbleCreate extends React.Component {
         // render circle and text elements inside a group
         const texts = _.map(data, (item, index) => {
             const props = this.props;
-            const fontSize = this.radiusScale(item.calories) / 2;
+            const fontSize = this.radiusScale(item.calories) / 5;
             return (
                 <g
                     key={index}
@@ -145,12 +146,11 @@ class BubbleCreate extends React.Component {
                         fontSize={`${fontSize}px`}
                         fontWeight="bold"
                     >
-                        {item.calories}
+                        {item.name}
                     </text>
                 </g>
             );
         });
-
         return texts;
     };
 
@@ -177,9 +177,9 @@ BubbleCreate.propTypes = {
 
 BubbleCreate.defaultProps = {
     data: [],
-    useLabels: false,
-    width: 800,
-    height: 500
+    useLabels: true,
+    width: 1224,
+    height: 700
 };
 
 

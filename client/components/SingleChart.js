@@ -12,18 +12,7 @@ export class SingleChart extends React.Component{
         this.state = {
 
         }
-        // this.testingd3 = this.testingd3.bind(this)
     }
-
-    // componentDidMount() {
-    //     this.testingd3();
-    // }
-
-    // testingd3() {
-    //     d3.selectAll("h1").style("color", function() {
-    //       return "hsl(" + Math.random() * 360 + ",100%,50%)";
-    //     });
-    // }
 
     render() {
         let colors = ['#F44336', '#E91E63', '#9C27B0', '#AD1457'];
@@ -149,7 +138,6 @@ class Sector extends React.Component {
 
     render() {
         const { data, colors, width, ind } = this.props;
-        // console.log("I'm in  SECTOR ========", colors, ind);
 
         let outerRadius = width/2.2,
         innerRadius = width/8,
@@ -175,12 +163,10 @@ class Sector extends React.Component {
     }
 
     onMouseOut() {
-        console.log('onMouseOut======');
         this.setState({text: '', opacity:'arc'});
     }
 
     onMouseOver(event) {
-        console.log('onMouseOver=====',event, this.props.data.value)
         this.setState({text: '', opacity:'arc-hover'});
         var percent = (this.props.data.value/this.props.total)*100;
         percent = percent.toFixed(1);

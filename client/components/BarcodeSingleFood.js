@@ -19,13 +19,11 @@ export class BarcodeSingleFood extends React.Component {
     }
 
     componentWillMount() {
-        console.log('am I in here??????', this.props.upcCode);
         this.props.fetchSingleFood(this.props.upcCode);
     }
 
     render() {
         const { singleFood } = this.props;
-        console.log('when do I get here????', singleFood.Data);
         let mineralList = [], vitaminList = [];
         if(singleFood.Data){
              mineralList = Object.keys(singleFood.Data.minerals);

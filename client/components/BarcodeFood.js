@@ -24,7 +24,6 @@ export class BarcodeFood extends React.Component {
     }
 
     render() {
-        console.log(this.state.scanning, "=========", this.state.upcCode)
         const { scanning, upcCode, render  } = this.state;
         return (
             <div className='barcode-food-p'>
@@ -54,7 +53,6 @@ export class BarcodeFood extends React.Component {
 
     handleSubmit(event) {
         event.preventDefault();
-        console.log('submitted======', this.state.upcCode);
         this.setState({scanning: false, render: 1});
     }
 
