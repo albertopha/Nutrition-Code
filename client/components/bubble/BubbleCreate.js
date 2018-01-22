@@ -126,7 +126,7 @@ class BubbleCreate extends React.Component {
         // render circle and text elements inside a group
         const texts = _.map(data, (item, index) => {
             const props = this.props;
-            const fontSize = this.radiusScale(item.calories) / 5;
+            const fontSize = this.radiusScale(item.calories) / 6;
             return (
                 <g
                     key={index}
@@ -146,7 +146,7 @@ class BubbleCreate extends React.Component {
                         fontSize={`${fontSize}px`}
                         fontWeight="bold"
                     >
-                        {item.name}
+                        {item.name + " " + item.calories}
                     </text>
                 </g>
             );
